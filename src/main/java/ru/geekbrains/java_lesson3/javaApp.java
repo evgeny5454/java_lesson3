@@ -19,14 +19,14 @@ public class javaApp {
         int i = 0; // число для сравнения в колличеством жизней в игре. Используется во 2м цикле
         int exit = 1; // Нужно для входа в первый цикл программы
         Scanner sc = new Scanner(System.in); // Запускаем сканер
-        String exitstr = new String("Повторить игру еще раз. Для продолжения нажмите 1. Для выхода 0");
-        String question = new String("Введие число от 0 до 9");
-        String number = new String("Число которое я загадал = ");
-        String halfsstr = new String("Попыток осталось = ");
-        String yes = new String("Правильно");
-        String no = new String("Загаданное число меньше");
-        String no2 = new String("Загаданное число больше");
-        String leave = new String("Игра окончена");
+        String exitstr ="Повторить игру еще раз. Для продолжения нажмите 1. Для выхода 0";
+        String question ="Введие число от 0 до 9";
+        String number ="Число которое я загадал = ";
+        String halfsstr ="Попыток осталось = ";
+        String yes ="Правильно";
+        String no ="Загаданное число меньше";
+        String no2 ="Загаданное число больше";
+        String leave ="Игра окончена";
 
         /*
         Цикл меняющий рандомное число, при окончании колличества попыток
@@ -52,7 +52,7 @@ public class javaApp {
                         i++;
                         System.out.println(halfsstr + (halfs - i));
 
-                    } else if (x > a ) {
+                    } else {
                     System.out.println(no2);
                     i++;
                     System.out.println(halfsstr + (halfs - i));
@@ -61,7 +61,7 @@ public class javaApp {
                         /*
                         Условие для выхода из игры
                          */
-            }if (i == halfs){
+            }
                 System.out.println(number + x);
                 System.out.println(exitstr);
                 int b = sc.nextInt();
@@ -75,7 +75,7 @@ public class javaApp {
                                 //nothing to do
                         }
 
-            }
+            
 
         }
         System.out.println(leave);
