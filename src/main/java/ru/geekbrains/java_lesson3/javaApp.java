@@ -24,7 +24,8 @@ public class javaApp {
         String number = new String("Число которое я загадал = ");
         String halfsstr = new String("Попыток осталось = ");
         String yes = new String("Правильно");
-        String no = new String("Не правильно");
+        String no = new String("Загаданное число меньше");
+        String no2 = new String("Загаданное число больше");
         String leave = new String("Игра окончена");
 
         /*
@@ -46,10 +47,15 @@ public class javaApp {
                     System.out.println(yes);
                     i = halfs;
 
-                    } else {
+                    } else if (x < a )  {
                         System.out.println(no);
                         i++;
                         System.out.println(halfsstr + (halfs - i));
+
+                    } else if (x > a ) {
+                    System.out.println(no2);
+                    i++;
+                    System.out.println(halfsstr + (halfs - i));
 
                     }
                         /*
